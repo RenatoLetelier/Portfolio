@@ -1,0 +1,42 @@
+:root {
+  padding: 0;
+  margin: 0;
+
+  color-scheme: light dark;
+
+  --primary: #fff;
+  --secondary: #f5f5f5;
+  --terciary: #e0e0e0;
+
+  --text: #040316;
+
+  --success: rgb(24, 172, 122);
+  --warning: rgb(197, 231, 46);
+  --wrong: #f75454;
+
+  --bg: #ffffff;
+
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary: #1e1e1e;
+    --secondary: #2c2c2c;
+    --terciary: #3a3a3a;
+
+    --text: #ffffff;
+
+    --success: rgb(24, 172, 122);
+    --warning: rgb(197, 231, 46);
+    --wrong: #f75454;
+
+    --bg: #242424;
+  }
+}
