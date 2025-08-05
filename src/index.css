@@ -4,9 +4,9 @@
 
   color-scheme: light dark;
 
-  --primary: #fff;
-  --secondary: #f5f5f5;
-  --terciary: #e0e0e0;
+  --primary: #ffffff;
+  --secondary: #ffffff;
+  --terciary: #ffffff;
 
   --text: #040316;
 
@@ -14,19 +14,19 @@
   --warning: rgb(197, 231, 46);
   --wrong: #f75454;
 
-  --bg: #ffffff;
+  --bg-primary: #ffffff;
 }
 
 body {
   margin: 0;
   padding: 0;
   color: var(--text);
-  background-color: var(--bg);
+  background-color: var(--bg-primary);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #1e1e1e;
+    --primary: #8f8f8f;
     --secondary: #2c2c2c;
     --terciary: #3a3a3a;
 
@@ -36,6 +36,7 @@ body {
     --warning: rgb(197, 231, 46);
     --wrong: #f75454;
 
-    --bg: #242424;
+    --bg-primary: #242424;
+    --bg-secondary: #333;
   }
 }
