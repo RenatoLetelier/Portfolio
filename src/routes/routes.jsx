@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout";
 import Home from "../pages/HomePage/HomePage.jsx";
 import Projects from "../pages/ProjectsPage/ProjectsPage.jsx";
 import Contact from "../pages/ContactPage/ContactPage.jsx";
+import NotFound from "../pages/NotFoundPage/NotFoundPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/projects", element: <Projects /> },
       { path: "/contact", element: <Contact /> },
+      { path: "*", element: <NotFound /> },
     ],
   },
 ]);

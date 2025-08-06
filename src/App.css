@@ -1,6 +1,6 @@
 #root {
-  width: 80%;
   margin: 0 auto;
-  height: 100dvh;
+  height: 200dvh;
   min-width: 320px;
+  padding: 0 10%;
 }
