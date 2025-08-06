@@ -1,12 +1,7 @@
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/routes";
 import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Bienvenido a la página de Renato Letelier!</h1>
-      <h2>Página en construcción...</h2>
-    </div>
-  );
+export default function App() {
+  return <RouterProvider router={router} />;
 }
-
-export default App;

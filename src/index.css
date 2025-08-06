@@ -1,32 +1,15 @@
+@font-face {
+  font-family: 'AppleSystem';
+  src: url('./assets/fonts/SF-Pro.ttf')
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'AppleSystem', sans-serif;
+}
+
 :root {
-  padding: 0;
-  margin: 0;
-
-  color-scheme: light dark;
-
-  --primary: #fff;
-  --secondary: #f5f5f5;
-  --terciary: #e0e0e0;
-
-  --text: #040316;
-
-  --success: rgb(24, 172, 122);
-  --warning: rgb(197, 231, 46);
-  --wrong: #f75454;
-
-  --bg: #ffffff;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  color: var(--text);
-  background-color: var(--bg);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #1e1e1e;
+    --primary: #8f8f8f;
     --secondary: #2c2c2c;
     --terciary: #3a3a3a;
 
@@ -36,6 +19,26 @@ body {
     --warning: rgb(197, 231, 46);
     --wrong: #f75454;
 
-    --bg: #242424;
+    --bg-primary: #0a0f1c;
+    --bg-secondary: #333;
   }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background-color: var(--bg-primary);
+  
+  background-image: radial-gradient(
+      circle at 50% -30%,
+      rgba(0, 153, 255, 0.2),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 70%, 
+      rgba(255, 0, 128, 0.1),
+      transparent 50%
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
 }

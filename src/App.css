@@ -1,5 +1,5 @@
 #root {
-  display: flex;
-  justify-content: center;
-  height: 100dvh;
+  margin: 0 auto;
+  height: 200dvh;
+  min-width: 360px;
 }
