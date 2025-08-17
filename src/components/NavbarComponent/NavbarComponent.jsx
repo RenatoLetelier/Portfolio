@@ -27,9 +27,7 @@ export default function Navbar() {
               <a href="/">In</a>
             </li>
             <li>
-              <li>
-                <img src={githubIcon} alt="GitHub" width="16" height="16" />
-              </li>
+              <img src={githubIcon} alt="GitHub" width="16" height="16" />
             </li>
             <li>
               <a href="/">Language</a>
